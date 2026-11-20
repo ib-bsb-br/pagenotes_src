@@ -1,0 +1,1 @@
+(()=>{"use strict";const e=window.matchMedia("(prefers-color-scheme: dark)");let t=null;window.setInterval(()=>{!async function(){const n=e.matches?"dark":"light";if(!t||t!==n){console.log("Theme change from",t,"to",n);try{await chrome.runtime.sendMessage({type:"themeChange",theme:n})}catch(e){return void console.error("Error sending theme change message:",e)}t=n}}()},1e4)})();

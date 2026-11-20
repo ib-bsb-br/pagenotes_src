@@ -1,0 +1,58 @@
+{
+   "action": {
+      "default_popup": "popup.html",
+      "default_title": "Page Notes"
+   },
+   "background": {
+      "service_worker": "background.js",
+      "type": "module"
+   },
+   "commands": {
+      "_execute_action": {
+         "description": "Open Page Notes",
+         "suggested_key": {
+            "default": "Alt+P"
+         }
+      },
+      "open_all_notes": {
+         "description": "Open All Notes",
+         "suggested_key": {
+            "default": "Alt+O"
+         }
+      },
+      "open_side_panel": {
+         "description": "Open Side Panel",
+         "suggested_key": {
+            "default": "Alt+S"
+         }
+      }
+   },
+   "default_locale": "en",
+   "description": "Sticky notes for any web page or whole website. Tag, search, and encrypt your notes. Sync privately to your own Google Drive.",
+   "host_permissions": [ "https://www.googleapis.com/", "https://accounts.google.com/" ],
+   "icons": {
+      "128": "icons/icon_128.png",
+      "16": "icons/icon_16.png",
+      "19": "icons/icon_19.png",
+      "48": "icons/icon_48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDc4Q5qsAR/H14mykGNQXNpDidfiQMyRaEV0eX6qk6V4Hq2IzSzGa90UN4EC7Hm5hFJ0Wzr90xLytmp5E+cyL3jF7pAWu9K4DbwbcgZfj29gbgzK2Z7cS6pICgeZmPusT5KXONzNZS6l/3rP0RoI1+4UjIBgDiCOaq0XZgIV5BA7wIDAQAB",
+   "manifest_version": 3,
+   "name": "Page Notes – Sticky Notes for Web Pages",
+   "oauth2": {
+      "client_id": "441023963490-8fj45hkekop8ountdg3k7697ss9c5spv.apps.googleusercontent.com",
+      "scopes": [ "https://www.googleapis.com/auth/drive.file" ]
+   },
+   "optional_host_permissions": [ "\u003Call_urls>" ],
+   "optional_permissions": [ "scripting" ],
+   "options_ui": {
+      "open_in_tab": true,
+      "page": "options.html"
+   },
+   "permissions": [ "alarms", "identity", "offscreen", "sidePanel", "storage", "tabs", "unlimitedStorage" ],
+   "side_panel": {
+      "default_path": "sidepanel.html"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.5.13"
+}

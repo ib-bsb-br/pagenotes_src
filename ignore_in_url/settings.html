@@ -1,0 +1,89 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"><title>Page Notes: Ignore-In-URL Settings</title><style>table {
+      border-collapse: separate;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--border-color);
+      padding: 10px 14px;
+      text-align: left;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    th {
+      background-color: var(--bg-input);
+      font-weight: 600;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    td.valueCell {
+      width: 160px;
+      text-align: center;
+    }
+
+    td.deleteCell {
+      width: 50px;
+      text-align: center;
+    }
+
+    .icon-btn {
+      background: none;
+      border: none;
+      padding: 6px;
+      border-radius: 6px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .icon-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .icon-btn.deleteB {
+      color: var(--text-muted);
+    }
+
+    .icon-btn.deleteB:hover {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+
+    .editable:hover {
+      background-color: var(--bg-input);
+      cursor: pointer;
+    }
+
+    td input[type='text'] {
+      width: 100%;
+      padding: 6px 10px;
+      border: 1px solid var(--primary-color);
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-family: inherit;
+      outline: none;
+      box-shadow: 0 0 0 3px rgb(37 99 235 / 0.1);
+    }
+
+    #addBtn {
+      background: var(--bg-card);
+      color: var(--text-primary);
+      border: 1px solid var(--border-color);
+    }
+
+    #addBtn:hover {
+      background: var(--bg-input);
+      border-color: var(--primary-color);
+      color: var(--primary-color);
+    }</style><script defer="defer" src="../ignoreInURLSettings.js"></script><link href="../ignoreInURLSettings.css" rel="stylesheet"></head><body><div id="outer"><div id="error"></div></div><div class="header"><div class="header-brand"><img src="../icons/icon_48.png" alt="Page Notes Logo" width="40"> <span class="logo">Page Notes</span></div><div id="top-links"><a href="../options.html">Options</a> <a href="../allnotes.html">All Notes</a> <a href="../relnotes.html">What's New</a> <a href="https://pagenotes.app">Web App</a> <a href="https://pagenotes.manugarg.com/faq/">FAQ</a> <a href="https://medium.com/@manugarg/10-000-users-for-page-notes-1f75786c2a41">Blog</a></div></div><div class="card"><h2>Ignore-In-URL Config</h2><p style="color: var(--text-secondary); margin-bottom: 16px;">Configure which parts of URLs to ignore when matching notes to pages.</p><table id="siteTable"><thead><tr><th>Site</th><th>Ignore-In-URL</th><th>Action</th></tr></thead><tbody id="tableBody"></tbody></table><button id="addBtn">Add Row</button></div></body></html>
